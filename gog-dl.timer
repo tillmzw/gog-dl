@@ -1,0 +1,10 @@
+[Unit]
+Description=Start the GOG games unit weekly
+Requires=gog-dl.service
+
+[Timer]
+Unit=gog-dl.service
+OnUnitInactiveSec=1w
+
+[Install]
+WantedBy=timers.target

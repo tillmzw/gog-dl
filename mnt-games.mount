@@ -1,0 +1,8 @@
+[Unit]
+Description=Mount external USB drive for games
+
+[Mount]
+What=/dev/disk/by-uuid/649D-C3D8
+Where=/mnt/games
+Type=vfat
+Options=defaults,nofail,uid=1001,gid=1001

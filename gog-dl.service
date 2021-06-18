@@ -1,0 +1,11 @@
+[Unit]
+Description=Download and update GOG games
+After=network.target
+RequiresMountsFor=/mnt/games
+
+[Service]
+Type=oneshot
+User=till
+Group=till
+WorkingDirectory=/home/till/gog-dl
+ExecStart=bash gog-dl.sh
