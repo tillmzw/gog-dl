@@ -1,6 +1,8 @@
-Rp kingdom_come_deliverance/.* 
-Rp planescape_torment/.*
-Rp saints_row_the_third_the_full_package/.*
-Rp the_witcher_3_wild_hunt_game/.*
-Rp the_witcher_goodies_collection/.*
-Rp wasteland_2_kickstarter/.*
+# all lines must start with Rp (= regex, perl dialect)
+# ^[\/]? - optional leading slash
+Rp ^[\/]?kingdom_come_deliverance/.* 
+Rp ^[\/]?planescape_torment/.*
+Rp ^[\/]?saints_row_the_third_the_full_package/.*
+Rp ^[\/]?the_witcher_3_wild_hunt_game/.*
+Rp ^[\/]?the_witcher_goodies_collection/.*
+Rp ^[\/]?wasteland_2_kickstarter/.*
