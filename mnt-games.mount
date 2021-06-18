@@ -2,7 +2,7 @@
 Description=Mount external USB drive for games
 
 [Mount]
-What=/dev/disk/by-uuid/649D-C3D8
+What=/dev/disk/by-uuid/33e3a493-4e10-4391-82e1-30b69f1ca8b4
 Where=/mnt/games
-Type=vfat
-Options=defaults,nofail,uid=1001,gid=1001
+Type=ext4
+Options=defaults,nofail
