@@ -2,6 +2,11 @@
 Description=Download and update GOG games
 After=network.target
 RequiresMountsFor=/mnt/games
+# allow restarting twice within 2h, otherwise mark as failed
+# makes sense mostly if unit can be restarted, see below
+#StartLimitBurst=2
+#StartLimitIntervalSec=2h
+
 
 [Service]
 Type=oneshot
@@ -9,3 +14,5 @@ User=till
 Group=till
 WorkingDirectory=/home/till/gog-dl
 ExecStart=bash gog-dl.sh
+# only available for oneshot types after systemd v244-rc1
+#Restart=on-abnormal
