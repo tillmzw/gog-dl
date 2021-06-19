@@ -1,8 +1,34 @@
 # all lines must start with Rp (= regex, perl dialect)
-# ^[\/]? - optional leading slash
-Rp ^[\/]?kingdom_come_deliverance/.* 
-Rp ^[\/]?planescape_torment/.*
-Rp ^[\/]?saints_row_the_third_the_full_package/.*
-Rp ^[\/]?the_witcher_3_wild_hunt_game/.*
-Rp ^[\/]?the_witcher_goodies_collection/.*
-Rp ^[\/]?wasteland_2_kickstarter/.*
+# the proper pattern is this:
+# Rp (?:a-game-path-here\/.*)
+# Rp (?:\/.*)
+
+# Remasters/GOTY available 
+Rp (?:planescape_torment\/.*)
+Rp (?:the_witcher_3_wild_hunt_game\/.*)
+Rp (?:the_witcher_goodies_collection\/.*)
+Rp (?:wasteland_2_kickstarter\/.*)
+Rp (?:spellforce_2_dragon_storm\/.*)
+Rp (?:spellforce_2_shadow_wars\/.*)
+
+# Already have this somewhere else
+Rp (?:kingdom_come_deliverance\/.*)
+
+# Old GOG freebies
+Rp (?:beneath_a_steel_sky\/.*)
+Rp (?:dragonsphere\/.*)
+Rp (?:gabriel_knight_sins_of_the_fathers_20th_anniversary_edition\/.*)
+Rp (?:gray_matter\/.*)
+Rp (?:redshirt\/.*)
+Rp (?:stargunner\/.*)
+Rp (?:treasure_adventure_game\/.*)
+Rp (?:tyrian_2000\/.*)
+Rp (?:ultima_4\/.*)
+Rp (?:warsow\/.*)
+Rp (?:worlds_of_ultima_the_savage_empire\/.*)
+
+# Don't care about these games
+Rp (?:saints_row_the_third_the_full_package\/.*)
+Rp (?:the_elder_scrolls_arena\/.*)
+Rp (?:the_elder_scrolls_chapter_ii_daggerfall\/.*)
+Rp (?:desperados_iii_demo\/.*)
