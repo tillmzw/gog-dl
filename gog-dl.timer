@@ -4,7 +4,7 @@ Requires=gog-dl.service
 
 [Timer]
 Unit=gog-dl.service
-OnUnitInactiveSec=1w
+OnUnitInactiveSec=2 days
 
 [Install]
 WantedBy=timers.target
