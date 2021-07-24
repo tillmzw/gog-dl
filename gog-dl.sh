@@ -10,7 +10,6 @@ lgogdownloader \
 	--platform linux+windows \
 	--language en \
 	--include installers,dlcs \
-	--save-changelogs \
 	--no-color \
 	--download $@ \
 	2>&1 | tee $DIR/download.log
@@ -18,6 +17,7 @@ lgogdownloader \
 lgogdownloader \
 	--directory $DIR \
 	--check-orphans \
+	| grep -v 'No orphaned files' \
 	| xargs -r rm -v 2>&1 | tee $DIR/orphans.log
 
 # remove empty dirs
