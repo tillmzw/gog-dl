@@ -10,9 +10,13 @@ Rp (?:the_witcher_goodies_collection\/.*)
 Rp (?:wasteland_2_kickstarter\/.*)
 Rp (?:spellforce_2_dragon_storm\/.*)
 Rp (?:spellforce_2_shadow_wars\/.*)
+Rp (?:mafia_ii_definitive_edition_base\/.*)
+Rp (?:saints_row_iv_reelected\/.*)
+Rp (?:spellforce_3_legacy\/.*)
 
 # Already have this somewhere else
 Rp (?:kingdom_come_deliverance\/.*)
+Rp (?:soma\/.*)
 
 # Old GOG freebies
 Rp (?:beneath_a_steel_sky\/.*)
@@ -32,3 +36,5 @@ Rp (?:saints_row_the_third_the_full_package\/.*)
 Rp (?:the_elder_scrolls_arena\/.*)
 Rp (?:the_elder_scrolls_chapter_ii_daggerfall\/.*)
 Rp (?:desperados_iii_demo\/.*)
+Rp (?:haven_park\/.*)
+
